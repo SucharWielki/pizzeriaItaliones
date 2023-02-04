@@ -38,11 +38,11 @@ h1 {
     color: var(--white);
     letter-spacing: 1.6px;
     font-size: 1.5rem;
-    animation: fadeIn 1s;
+    animation: fadeIn 1.5s;
 }
 .italiones {
     color: var(--green);
-    animation: fadeIn 1s;
+    animation: fadeIn 1.5s;
 }
 
 /* Menu */
@@ -66,6 +66,8 @@ h1 {
 .menu__item {
     text-decoration: none;
     color: var(--black);
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 .showMenu {
     transform: translateY(0);
@@ -78,7 +80,7 @@ h1 {
     align-items: center;
     cursor: pointer;
     z-index: 100;
-    animation: fadeIn 1s;
+    animation: fadeIn 1.5s;
 }
 .material-icons.white {
     color: var(--white);
@@ -102,16 +104,27 @@ h1 {
 .main__history {
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
+    gap: 1rem;
     text-align: center;
-    animation: fadeInLeft 1s;
+    animation: fadeInLeft 1.5s;
 }
 .history__p {
     color: var(--gray);
 }
 .img {
     width: 100%;
-    animation: fadeInLeft 1s;
+    animation: fadeInLeft 1.5s;
+}
+.main__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    animation: fadeInLeft 1.5s;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 .main__menu {
     display: flex;
@@ -189,6 +202,7 @@ h2 {
     margin-bottom: 1rem;
 }
 .footer__a {
+    font-size: 0.65rem;
     text-decoration: none;
     color: var(--gray);
 }
@@ -197,20 +211,29 @@ h2 {
     html, body {
         font-size: 18px;
     }
+    .history__p {
+        padding: 0 1.7rem;
+    }
+    .img {
+        width: 80%;
+    }
 }
 @media (min-width: 1200px) {
     .main {
         width: 60%;
     }
+    .history__p {
+        padding: 0 3rem;
+    }
     .img {
-        width: 60%;
+        width: 75%;
     }
 }
 
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translateX(-10%);
+        transform: translateX(-20%);
     }
     to {
         opacity: 1;

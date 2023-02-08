@@ -1,4 +1,4 @@
-class Menu {
+class HamburgerMenu {
     constructor(selector) {
         this.cnt = document.querySelector(selector);
         this.menu = null;
@@ -61,4 +61,41 @@ class Menu {
         }
     }
 }
-const menu = new Menu('.header');
+const menu = new HamburgerMenu('.header');
+
+class MenuList {
+    constructor(selector) {
+        this.cont = document.querySelector(selector);
+        this.btns = this.cont.querySelectorAll('.button');
+        this.pizzaMenu = this.cont.querySelector('.pizza__list');
+        this.kebabMenu = this.cont.querySelector('.kebab__list');
+        this.drinksMenu = this.cont.querySelector('.drink__list');
+
+        this.hideAllMenus();
+        this.pizzaMenu.style.display = 'flex';
+        for (const btn of this.btns) {
+            btn.addEventListener('click', this.changeMenuList.bind(this));
+        }
+    }
+
+    hideAllMenus() {
+        this.pizzaMenu.style.display = 'none';
+        this.kebabMenu.style.display = 'none';
+        this.drinksMenu.style.display = 'none';
+    }
+    changeMenuList(e) {
+            this.hideAllMenus()
+            switch (e.target.value) {
+                case 'pizza':
+                    this.pizzaMenu.style.display = 'flex';
+                    break;
+                case 'kebab':
+                    this.kebabMenu.style.display = 'flex';
+                    break;
+                case 'drinks':
+                    this.drinksMenu.style.display = 'flex';
+                    break;
+            }
+    }
+}
+const menuList = new MenuList('.main__menu');

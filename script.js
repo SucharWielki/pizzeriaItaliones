@@ -31,6 +31,7 @@ class HamburgerMenu {
     generateIcons() {
         this.nav = document.createElement('nav');
         this.nav.classList.add('header__nav');
+        this.nav.classList.add('fadeIn');
 
         this.menuIcon = document.createElement('span');
         this.menuIcon.innerText = 'menu';
@@ -88,12 +89,15 @@ class MenuList {
             switch (e.target.value) {
                 case 'pizza':
                     this.pizzaMenu.style.display = 'flex';
+                    this.pizzaMenu.classList.add('fadeInLeft');
                     break;
                 case 'kebab':
                     this.kebabMenu.style.display = 'flex';
+                    this.kebabMenu.classList.add('fadeInLeft');
                     break;
                 case 'drinks':
                     this.drinksMenu.style.display = 'flex';
+                    this.drinksMenu.classList.add('fadeInLeft');
                     break;
             }
     }

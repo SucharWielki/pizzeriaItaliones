@@ -218,6 +218,9 @@ li > p {
 /* Gallery */
 .main__gallery {
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
 }
 .grid {
     display: flex;

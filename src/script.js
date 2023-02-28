@@ -35,16 +35,11 @@ class HamburgerMenu {
 
         this.menuIcon = document.createElement('span');
         this.menuIcon.innerText = 'menu';
-        this.menuIcon.classList.add('material-icons');
-        this.menuIcon.classList.add('md-36');
-        this.menuIcon.classList.add('menu__icon');
-        this.menuIcon.classList.add('white');
+        this.menuIcon.classList.add('material-icons', 'md-36', 'menu__icon', 'white');
 
         this.closeIcon = document.createElement('span');
         this.closeIcon.innerText = 'close';
-        this.closeIcon.classList.add('material-icons');
-        this.closeIcon.classList.add('md-36');
-        this.closeIcon.classList.add('close__icon');
+        this.closeIcon.classList.add('material-icons', 'md-36', 'close__icon');
 
         this.nav.appendChild(this.menuIcon);
         this.nav.appendChild(this.closeIcon);

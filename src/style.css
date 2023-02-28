@@ -203,6 +203,7 @@ li > p {
 }
 .item__ingredients {
     color: var(--gray);
+    font-size: 0.9rem;
 }
 /* Contact */
 .main__contact {
@@ -293,15 +294,13 @@ li > p {
 }
 
 
-
-
 /* ----- slider ---- */
 .slider {
     position: relative;
     display: grid;
     grid-template-columns: 4rem 1fr 4rem;
     grid-template-rows: 1fr;
-    height: 700px;
+    height: 100%;
 }
 .slider-slides-cnt {
     grid-column: 1 / -1;

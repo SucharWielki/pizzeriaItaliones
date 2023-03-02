@@ -60,10 +60,10 @@ class HamburgerMenu {
 class MenuList {
     constructor(selector) {
         this.cont = document.querySelector(selector);
-        this.btns = this.cont.querySelectorAll('.button');
-        this.pizzaMenu = this.cont.querySelector('.pizza__list');
-        this.kebabMenu = this.cont.querySelector('.kebab__list');
-        this.drinksMenu = this.cont.querySelector('.drink__list');
+        this.btns = this.cont.querySelectorAll('.menu__button');
+        this.pizzaMenu = this.cont.querySelector('.menu__list--pizza');
+        this.kebabMenu = this.cont.querySelector('.menu__list--kebab');
+        this.drinksMenu = this.cont.querySelector('.menu__list--drink');
 
         this.hideAllMenus();
         this.pizzaMenu.style.display = 'flex';

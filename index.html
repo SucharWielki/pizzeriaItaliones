@@ -12,53 +12,53 @@
     <div class="container">
         <header class="header">
             <div class="header__logo">
-                <h1 class="fadeIn">
-                    Pizzeria <a class="italiones"> Italiones </a>
+                <h1 class="header__title header__title--main fadeIn">
+                    Pizzeria <a class="header__title header__title--italiones"> Italiones </a>
                 </h1>
             </div>
         </header>
         <main class="main">
             <article class="main__history fadeInLeft" id="about">
-                <h2 class="history__h2">
-                    Pizzeria <a class="italiones"> Italiones </a>
+                <h2 class="history__title">
+                    Pizzeria <a class="history__title--italiones"> Italiones </a>
                 </h2>
-                <p class="history__p">
+                <p class="history__paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere bibendum sagittis. Pellentesque faucibus auctor nisi nec auctor. Morbi luctus lacus ipsum, vitae feugiat neque tristique nec. Donec fermentum mauris in ornare finibus. Nam fermentum nisi at turpis lobortis, eu condimentum dui suscipit. Nulla porttitor, leo vitae feugiat eleifend, massa ex fringilla enim, sit amet faucibus ipsum quam vel augue.
                 </p>
             </article>
-            <img src="res/pizza.png" alt="Pizza" class="img fadeInLeft">
+            <img src="res/pizza.png" alt="Pizza" class="main__image fadeInLeft">
             <section class="main__info fadeInLeft">
-                <h2>
+                <h2 class="info__title">
                     Dodatkowe informacje
                 </h2>
-                <ul>
-                    <li>
+                <ul class="info__list">
+                    <li class="info__item">
                         Dowóz na terenie miasta wynosi 3.00zł przy minimalnej wartości zamówienia 25.00zł
                     </li>
-                    <li>
+                    <li class="info__item">
                         Okolice miasta do 7km (Koszt dostawy 8.00zł przy minimalnej wartości zamówienia 60zł)
                     </li>
-                    <li>
+                    <li class="info__item">
                         Do zamówień na dowóz i wynos doliczamy 2 zł za opakowanie
                     </li>
                 </ul>
             </section>
             <section class="main__menu" id="menu">
-                <h2 class="menu__h2">
+                <h2 class="menu__title">
                     Menu
                 </h2>
                 <div class="menu__buttons">
-                    <button type="button" class="button" value="pizza">
+                    <button type="button" class="menu__button" value="pizza">
                         Pizza
                     </button>
-                    <button type="button" class="button" value="kebab">
+                    <button type="button" class="menu__button" value="kebab">
                         Kebab
                     </button>
-                    <button type="button" class="button" value="drinks">
+                    <button type="button" class="menu__button" value="drinks">
                         Napoje
                     </button>
                 </div>
-                    <ol class="pizza__list">
+                    <ol class="menu__list menu__list--pizza">
                         <li class="list__item">
                             Margherita
                             <p class="item__price">
@@ -168,7 +168,7 @@
                             </p>
                         </li>
                     </ol>
-                    <ol class="kebab__list">
+                    <ol class="menu__list menu__list--kebab">
                         <li class="list__item">
                             Kebab z kurczakiem
                             <p class="item__price">
@@ -215,7 +215,7 @@
                             </p>
                         </li>
                     </ol>
-                    <ol class="drink__list">
+                    <ol class="menu__list menu__list--drink">
                         <li class="list__item">
                             Cola-Cola
                             <p class="item__price">
@@ -249,31 +249,31 @@
                     </ol>
                 </section>
                 <section class="main__gallery">
-                    <h2>
+                    <h2 class="gallery__title">
                         Galeria
                     </h2>
                     <div class="gallery" id="slider1">
-                            <img src="res/pizza4.png" alt="">
-                            <img src="res/pizza6.png" alt="">
-                            <img src="res/pizza5.png" alt="">
-                            <img src="res/pizza7.png" alt="">
+                            <img src="res/pizza4.png" alt="" class="gallery__image">
+                            <img src="res/pizza6.png" alt="" class="gallery__image">
+                            <img src="res/pizza5.png" alt="" class="gallery__image">
+                            <img src="res/pizza7.png" alt="" class="gallery__image">
                     </div>
                 </section>
                 <section class="main__contact" id="contact">
-                    <h2>
+                    <h2 class="contact__title">
                         Kontakt
                     </h2>
-                    <div>
-                        <h4>
+                    <div class="contact__info">
+                        <h4 class="info__title">
                             Numer telefonu:
                         </h4>
-                        <a href="tel:+48999999999" class="contact__tel">
+                        <a href="tel:+48999999999" class="info__tel">
                             +48 999 999 999
                         </a>
-                        <h4>
+                        <h4 class="info__title">
                             Lokal czynny:
                         </h4>
-                        <p>
+                        <p class="info__openinghours">
                             08:00 - 22:00
                         </p>
                     </div>

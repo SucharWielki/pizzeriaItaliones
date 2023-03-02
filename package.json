@@ -1,0 +1,23 @@
+{
+  "name": "pizzeriaItaliones",
+  "version": "1.0.0",
+  "description": "This is a simple pizzeria website",
+  "main": "script.js",
+  "scripts": {
+    "sass": "sass src/style.scss style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SucharWielki/pizzeriaItaliones.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SucharWielki/pizzeriaItaliones/issues"
+  },
+  "homepage": "https://github.com/SucharWielki/pizzeriaItaliones#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}
